@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>JavaWebApplication</display-name>
+  
+  <!-- Register Servlet -->
+  <servlet>
+    	<servlet-name>RegisterServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.RegisterServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    	<servlet-name>RegisterServlet</servlet-name>
+    	<url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Login Servlet  -->
+    <servlet>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Logout Servlet -->
+    <servlet>
+    	<servlet-name>LogoutServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>LogoutServlet</servlet-name>
+    	<url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Edit Profile Servlet -->
+    <servlet>
+    	<servlet-name>EditServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.EditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>EditServlet</servlet-name>
+    	<url-pattern>/EditProfile</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AddPostServlet -->
+    <servlet>
+    	<servlet-name>AddPostServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AddPostServlet</servlet-name>
+    	<url-pattern>/AddPost</url-pattern>
+    </servlet-mapping>
+    
+    <!-- LikeServlet -->
+    <servlet>
+    	<servlet-name>LikeServlet</servlet-name>
+    	<servlet-class>com.vikram.servlets.LikeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>LikeServlet</servlet-name>
+    	<url-pattern>/LikedServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 404  error handling resource not found -->
+    <error-page>
+    	<error-code>404</error-code>
+    	<location>/404_error.jsp</location>
+    </error-page>
+    
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
